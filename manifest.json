@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "Angular PWA ",
   "scope": "/",
-  "start_url": "http://localhost:8080/",
+  "start_url": "https://shanhaichik.github.io/angular-service-worker-demo/",
   "short_name": "Angular PWA",
   "description": "Sample PWA App",
   "orientation": "any",
