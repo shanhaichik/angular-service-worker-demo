@@ -1,0 +1,21 @@
+:host {
+  background: #673ab7;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.icon {
+  padding: 0 14px;
+}
+
+.icon:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.disable {
+  color: #ccc;
+  pointer-events: none;
+}

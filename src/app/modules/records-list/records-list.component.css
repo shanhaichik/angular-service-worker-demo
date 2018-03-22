@@ -1,0 +1,46 @@
+.panel {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.panel:first-child {
+  margin-top: 15px;
+}
+
+.empty-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+
+  color: #ccc;
+  font: 500 20px/32px Roboto,"Helvetica Neue",sans-serif;
+  font-size: 52px;
+  text-shadow: 0 0 1px #673ab7;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.description {
+  width: 100%;
+  margin-left: 50px;
+}
+
+.description-text {
+  margin-top: 15px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.icon {
+  padding: 0 14px;
+}
+
+.icon:hover {
+  color: #ccc;
+  cursor: pointer;
+}

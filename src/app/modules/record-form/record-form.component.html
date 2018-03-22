@@ -1,0 +1,44 @@
+<div class="wrapper">
+  <form class="form" [formGroup]="form">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>Редактирование</span>
+        <span class="spacer"></span>
+
+        <mat-icon
+          class="icon"
+          (click)="save()">done
+        </mat-icon>
+
+        <mat-icon
+          class="icon"
+          *ngIf="!isEdit"
+          (click)="delete()">delete
+        </mat-icon>
+
+        <mat-icon
+          class="icon"
+          *ngIf="isEdit"
+          (click)="goBack()">close
+        </mat-icon>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <video #recording width="100%" controls></video>
+
+    <mat-form-field class="input">
+      <input matInput
+             placeholder="Название"
+             formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field class="input">
+        <textarea matInput
+                  matTextareaAutosize
+                  [matAutosizeMinRows]="5"
+                  [matAutosizeMaxRows]="12"
+                  placeholder="Описание"
+                  formControlName="description"></textarea>
+    </mat-form-field>
+  </form>
+</div>
