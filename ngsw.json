@@ -1,0 +1,63 @@
+{
+  "configVersion": 1,
+  "index": "/angular-service-worker-demo/index.html",
+  "appData": {
+    "hello": "world"
+  },
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/angular-service-worker-demo/favicon.ico",
+        "/angular-service-worker-demo/index.html",
+        "/angular-service-worker-demo/inline.318b50c57b4eba3d437b.bundle.js",
+        "/angular-service-worker-demo/main.19e434263a28b46520a8.bundle.js",
+        "/angular-service-worker-demo/polyfills.bf95165a1d5098766b92.bundle.js",
+        "/angular-service-worker-demo/styles.cd13d6c587ddac4c879f.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/angular-service-worker-demo/assets/icon-128x128.png",
+        "/angular-service-worker-demo/assets/icon-152x152.png",
+        "/angular-service-worker-demo/assets/icon-256x256.png",
+        "/angular-service-worker-demo/assets/icon-512x512.png"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*"
+      ]
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "from-api",
+      "patterns": [
+        "\\/dashboard",
+        "\\/settings"
+      ],
+      "strategy": "freshness",
+      "maxSize": 15,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/angular-service-worker-demo/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "/angular-service-worker-demo/assets/icon-128x128.png": "f444fd3ae0dbc3be5741ef77cf9d0aa21bcdd9d5",
+    "/angular-service-worker-demo/main.19e434263a28b46520a8.bundle.js": "848ba39f45675ead0f153b3bc5f03d4046c63042",
+    "/angular-service-worker-demo/assets/icon-152x152.png": "c439eef9906d5a1758700fbbc8ea38d7295eb1bb",
+    "/angular-service-worker-demo/polyfills.bf95165a1d5098766b92.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
+    "/angular-service-worker-demo/assets/icon-256x256.png": "aa794bf00591bd06c9fee00126b321baa155ee8d",
+    "/angular-service-worker-demo/styles.cd13d6c587ddac4c879f.bundle.css": "234c27f0d85d6b67f1efe6fb934a3221d3302d01",
+    "/angular-service-worker-demo/assets/icon-512x512.png": "ad9b5746e8a586f161f92b21f97c4cd81b157965",
+    "/angular-service-worker-demo/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/angular-service-worker-demo/index.html": "d2849c13b2d8a56fd422a42e0cc8e2a3c852b2d0"
+  }
+}
