@@ -1,7 +1,8 @@
 {
   "index": "/index.html",
   "appData": {
-      "hello": "world"
+      "hello": "world",
+      "message": "А вы любите котиков?"
   },
   "assetGroups": [{
     "name": "app",
@@ -43,3 +44,6 @@
     }
   ]
 }
+
+
+ 
